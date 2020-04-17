@@ -6,7 +6,7 @@ node {
     def newApp
     def registry = 'desmund/devops1'
     def registryCredential = 'dockerhub'
-	
+	tools {nodejs "node" }
 	stage('Git') {
 		git 'https://github.com/desmundy/DockerizeJenkins.git'
 	}
